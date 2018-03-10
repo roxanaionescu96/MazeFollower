@@ -106,14 +106,14 @@ void loop()
  //   if(firstCellCheckExcep==1) break;
  // }
   //no left wall case
-   if(leftSensor>cellSize) {
-                            moveLeft();
+   if(rightSensor>cellSize) {
+                            moveRight();
                             moveForward();
                       }
         else if(frontSensor>cellSize){
                                 moveForward();
                               }
-            else if(rightSensor>cellSize){
+            else if(leftSensor>cellSize){
                                     moveRight();
                                     moveForward();
                                     }
